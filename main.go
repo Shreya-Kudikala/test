@@ -83,5 +83,6 @@ func main() {
 	router.HandleFunc("/products/{id}", updateProduct).Methods("PUT")
 	router.HandleFunc("/products/{id}", deleteProduct).Methods("DELETE")
 	fmt.Printf("Starting Server at Port 8080\n")
+	fmt.Println("Git Test")
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
